@@ -22,12 +22,10 @@ const [loading, setLoading] = useState(false);
 async function getReview() {
   setLoading(true);
   try {
-<<<<<<< HEAD
-    const response = await axios.post("https://code-reviewer-94ip.onrender.com/ai/get-review", { code });
-=======
-    const response = await axios.post(`https://code-reviewer-94ip.onrender.com/ai/get-review`, { code });   
 
->>>>>>> 50cea1162806dfb16104e8b6b9abf26838633fa3
+    const response = await axios.post("https://code-reviewer-94ip.onrender.com/ai/get-review", { code });
+ 
+
     setReview(response.data);
     setError(false);
   } catch (error) {
